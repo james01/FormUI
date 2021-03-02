@@ -93,6 +93,8 @@ Section {
 
 You can hide and show sections in a similar way.
 
+<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Hidden.gif" width="585" />
+
 ### Using `ForEach`
 
 Oftentimes you'll want to generate rows or sections from a static data source like an enum. Use `ForEach` for these situations.
