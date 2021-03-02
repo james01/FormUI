@@ -53,8 +53,8 @@ Handle row selection by passing a handler to the `onSelect(_:)` method of a row.
 Row(style: .default) { (cell) in
     cell.textLabel?.text = "Tap Me"
 }.onSelect { (tableView, indexPath) in
-    print("Hello World")
     tableView.deselectRow(at: indexPath, animated: true)
+    print("Hello World")
 }
 ```
 
@@ -91,9 +91,9 @@ Section {
 }
 ```
 
-You can hide and show sections in a similar way.
-
 <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Hidden.gif" width="585" />
+
+You can hide and show sections in a similar way.
 
 ### Using `ForEach`
 
@@ -116,6 +116,8 @@ Section(header: "Theme") {
     }
 }
 ```
+
+<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach.png" width="585" />
 
 ## Author
 
