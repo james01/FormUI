@@ -14,13 +14,8 @@ FormUI aims to be lightweight and unopinionated. It solves the troublesome parts
 
 ## Examples
 
-<table>
-    <tr>
-        <th>
-            <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Display.gif" width="292" />
-        </th>
-    </tr>
-</table>
+| ![Display Settings](https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Display.gif) | ![Profile](https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Profile.gif) | ![New Event](https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Event.gif) |
+| :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
 
 ---
 
