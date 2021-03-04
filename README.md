@@ -8,7 +8,7 @@ Powerfully simple form builder for UIKit.
 
 FormUI provides an easy way to build native forms for iOS. It is inspired by SwiftUI and takes advantage of new technologies like Combine and result builders. However, it is entirely implemented in UIKit which gives it more options for customization.
 
-FormUI aims to be lightweight and unopinionated. It solves the troublesome parts of making forms—like counting sections and hiding rows—but leaves you open to fill in the details for your specific use case.
+FormUI aims to be lightweight and unopinionated. It solves the troublesome parts of making forms—like counting sections and hiding rows—but leaves you to fill in the details for your specific use case.
 
 ---
 
@@ -59,6 +59,8 @@ class MyFormViewController: FormViewController {
     }
 }
 ```
+
+> The `Form` and `Section` initializers take advantage of the _result builder_ feature of Swift that was unofficially introduced in Swift 5.1, and officially introduced in Swift 5.4.
 
 ### Handling Row Selection
 
@@ -112,7 +114,7 @@ You can hide and show sections in a similar way.
 
 ### Using `ForEach`
 
-Oftentimes you'll want to generate rows or sections from a static data source like an enum. Use `ForEach` in these situations.
+Oftentimes you'll want to generate rows or sections from a static data source such as an enum. Use `ForEach` in these situations.
 
 ```swift
 enum Theme: String, CaseIterable {
@@ -133,6 +135,31 @@ Section(header: "Theme") {
 ```
 
 <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach.png" width="292" />
+
+`ForEach` can also be used with an array of data.
+
+```swift
+let desserts = [
+    "🍪 Cookies",
+    "🍫 Chocolate",
+    "🍦 Ice Cream",
+    "🍭 Candy",
+    "🍩 Doughnuts",
+    "🍰 Cake"
+]
+
+...
+
+Section(header: "Desserts") {
+    ForEach(0..<desserts.count) { (n) -> Row in
+        Row(style: .default) { (cell) in
+            cell.textLabel?.text = desserts[n]
+        }
+    }
+}
+```
+
+<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach2.png" width="292" />
 
 ---
 
