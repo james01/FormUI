@@ -111,7 +111,7 @@ Section {
 }
 ```
 
-<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Hidden.gif" width="585" />
+<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Hidden.gif" width="292" />
 
 You can hide and show sections in a similar way.
 
@@ -137,7 +137,7 @@ Section(header: "Theme") {
 }
 ```
 
-<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach.png" width="585" />
+<img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach.png" width="292" />
 
 ---
 
