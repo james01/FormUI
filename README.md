@@ -2,20 +2,40 @@
 
 Powerfully simple form builder for UIKit.
 
+---
+
 ## Overview
 
 FormUI provides an easy way to build native forms for iOS. It is inspired by SwiftUI and takes advantage of new technologies like Combine and result builders. However, it is entirely implemented in UIKit which gives it more options for customization.
 
-FormUI aims to be lightweight and unopinionated.
+FormUI aims to be lightweight and unopinionated. It solves the troublesome parts of making forms—like counting sections and hiding rows—but leaves you open to fill in the details for your specific use case.
+
+---
+
+## Examples
+
+<table>
+    <tr>
+        <th>
+            <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Display.gif" width="585" />
+        </th>
+    </tr>
+</table>
+
+---
 
 ## Requirements
 
 - iOS 13.0+
 - Swift 5.3+
 
+---
+
 ## Installation
 
 FormUI is still in beta. Install it by downloading the project and dragging it into Xcode.
+
+---
 
 ## Usage
 
@@ -97,7 +117,7 @@ You can hide and show sections in a similar way.
 
 ### Using `ForEach`
 
-Oftentimes you'll want to generate rows or sections from a static data source like an enum. Use `ForEach` for these situations.
+Oftentimes you'll want to generate rows or sections from a static data source like an enum. Use `ForEach` in these situations.
 
 ```swift
 enum Theme: String, CaseIterable {
@@ -119,9 +139,13 @@ Section(header: "Theme") {
 
 <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/ForEach.png" width="585" />
 
+---
+
 ## Author
 
 James Randolph ([@jamesrandolph01](https://twitter.com/jamesrandolph01))
+
+---
 
 ## License
 
