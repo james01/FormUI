@@ -17,7 +17,7 @@ FormUI aims to be lightweight and unopinionated. It solves the troublesome parts
 <table>
     <tr>
         <th>
-            <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Display.gif" width="585" />
+            <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Display.gif" width="292" />
         </th>
     </tr>
 </table>
