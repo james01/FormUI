@@ -26,7 +26,17 @@ FormUI aims to be lightweight and unopinionated. It solves the troublesome parts
 
 ## Installation
 
-FormUI is still in beta. Install it by downloading the project and dragging it into Xcode.
+> This is a pre-release version of FormUI. The API is subject to change without warning.
+
+### Swift Package Manager
+
+To install FormUI using the [Swift Package Manager](https://swift.org/package-manager/), add the following value to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/james01/FormUI.git", .upToNextMajor(from: "0.1.0"))
+]
+```
 
 ---
 
