@@ -2,8 +2,6 @@
     <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Title.png" width="290">
 </p>
 
----
-
 ## Overview
 
 FormUI provides an easy way to build native forms for iOS. It is inspired by SwiftUI and takes advantage of new technologies like Combine and result builders. However, it is entirely implemented in UIKit which gives it more options for customization.
