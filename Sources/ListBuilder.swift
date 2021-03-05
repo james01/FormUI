@@ -7,13 +7,16 @@
 
 import Foundation
 
+/// Types adopting `ListConvertible` can be represented as an array of elements.
 public protocol ListConvertible {
     associatedtype Element
+    
+    /// Returns an array representation of the conforming instance.
     func asList() -> [Element]
 }
 
-@_functionBuilder
-public struct ListBuilder<T> {
+/// A custom parameter attribute that constructs arrays from closures.
+@_functionBuilder public struct ListBuilder<T> {
     public static func buildBlock() -> [T] {
         return []
     }

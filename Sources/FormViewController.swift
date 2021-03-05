@@ -8,12 +8,14 @@
 import UIKit
 import Combine
 
+/// A view controller that displays a form.
 open class FormViewController: UITableViewController {
     
     private var dataSource: FormDataSource!
     
     private var subscriptions = Set<AnyCancellable>()
-
+    
+    /// The abstract representation of the form managed by the controller object.
     public var form: Form! {
         didSet {
             dataSource = FormDataSource(tableView: tableView, form: form)
