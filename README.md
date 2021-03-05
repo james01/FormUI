@@ -1,6 +1,6 @@
-# FormUI
-
-Powerfully simple form builder for UIKit.
+<p align="center">
+    <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Title.png" width="290">
+</p>
 
 ---
 
