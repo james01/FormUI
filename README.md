@@ -26,7 +26,13 @@ FormUI aims to be lightweight and unopinionated. It solves the troublesome parts
 
 ## Installation
 
-> This is a pre-release version of FormUI. The API is subject to change without warning.
+### CocoaPods
+
+To install FormUI using [CocoaPods](https://cocoapods.org), add the following line to your `Podfile`:
+
+```ruby
+pod 'FormUI', '~> 0.1.0'
+```
 
 ### Swift Package Manager
 
