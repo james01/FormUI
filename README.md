@@ -2,8 +2,6 @@
     <img src="https://raw.githubusercontent.com/james01/FormUI/main/Docs/Images/Title.png" width="290">
 </p>
 
----
-
 <p align="center">
     <a href="https://cocoapods.org/pods/FormUI"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/FormUI"></a>
     <img alt="Platform" src="https://img.shields.io/cocoapods/p/CardNavigation?logo=Apple">
