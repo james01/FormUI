@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <a href="https://cocoapods.org/pods/FormUI"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/FormUI?color=2EA44F"></a>
+    <a href="https://cocoapods.org/pods/FormUI"><img alt="CocoaPods" src="https://img.shields.io/cocoapods/v/FormUI"></a>
     <img alt="Platform" src="https://img.shields.io/cocoapods/p/CardNavigation?logo=Apple">
 </p>
 
