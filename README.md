@@ -1,9 +1,9 @@
 # FormUI
 
-Powerfully simple form builder for UIKit.
-
 [![CocoaPods](https://img.shields.io/cocoapods/v/FormUI)](https://cocoapods.org/pods/FormUI)
 ![Platform](https://img.shields.io/cocoapods/p/FormUI?logo=Apple)
+
+Powerfully simple form builder for UIKit.
 
 ---
 
