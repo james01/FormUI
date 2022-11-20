@@ -31,21 +31,13 @@ FormUI aims to be lightweight and unopinionated. It solves the troublesome parts
 
 ## Installation
 
-### CocoaPods
-
-To install FormUI using [CocoaPods](https://cocoapods.org), add the following line to your `Podfile`:
-
-```ruby
-pod 'FormUI', '~> 0.1.0'
-```
-
 ### Swift Package Manager
 
 To install FormUI using the [Swift Package Manager](https://swift.org/package-manager/), add the following value to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/james01/FormUI.git", .upToNextMajor(from: "0.1.0"))
+    .package(url: "https://github.com/james01/FormUI.git", .upToNextMajor(from: "0.1.1"))
 ]
 ```
 
