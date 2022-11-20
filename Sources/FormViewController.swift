@@ -37,6 +37,26 @@ open class FormViewController: UITableViewController {
         }
         dataSource.apply(snapshot, animatingDifferences: animated)
     }
+    
+    open override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        let sectionIndex: Int
+        if #available(iOS 15.0, *) {
+            sectionIndex = dataSource.sectionIdentifier(for: section)!
+        } else {
+            sectionIndex = dataSource.snapshot().sectionIdentifiers[section]
+        }
+        return form.sections[sectionIndex].headerHeight
+    }
+    
+    open override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        let sectionIndex: Int
+        if #available(iOS 15.0, *) {
+            sectionIndex = dataSource.sectionIdentifier(for: section)!
+        } else {
+            sectionIndex = dataSource.snapshot().sectionIdentifiers[section]
+        }
+        return form.sections[sectionIndex].footerHeight
+    }
 
     open override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return dataSource.itemIdentifier(for: indexPath)?.height ?? tableView.rowHeight

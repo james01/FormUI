@@ -17,6 +17,10 @@ public final class Section {
     
     let rows: [Row]
     
+    var headerHeight: CGFloat = UITableView.automaticDimension
+    
+    var footerHeight: CGFloat = UITableView.automaticDimension
+    
     var hidden: Bool = false
     
     var hiddenChanged: PassthroughSubject<Void, Never>?
@@ -32,6 +36,20 @@ public final class Section {
         self.header = header
         self.footer = footer
         self.rows = content()
+    }
+    
+    /// Sets the height of the section header.
+    /// - Parameter height: The height of the header.
+    public func headerHeight(_ height: CGFloat) -> Self {
+        self.headerHeight = height
+        return self
+    }
+    
+    /// Sets the height of the section footer.
+    /// - Parameter height: The height of the footer.
+    public func footerHeight(_ height: CGFloat) -> Self {
+        self.footerHeight = height
+        return self
     }
     
     /// Shows or hides the section according to values emitted by a publisher.
