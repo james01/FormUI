@@ -23,12 +23,6 @@ open class Row: Identifiable {
     
     private var subscriptions = Set<AnyCancellable>()
     
-    /// Initializes a row with an instance of a `UITableViewCell`.
-    /// - Parameter cell: The cell with which to create the row.
-    public init(cell: UITableViewCell) {
-        self.cell = cell
-    }
-    
     /// Initializes a row with a cell of the given style.
     /// - Parameters:
     ///   - style: The cell style with which to create the cell.
@@ -38,14 +32,13 @@ open class Row: Identifiable {
         configure(cell)
     }
     
-    /// Initializes a row with the given cell class.
+    /// Initializes a row with the given cell.
     /// - Parameters:
-    ///   - cellClass: The class of the cell.
+    ///   - cell: The cell with which to create the row.
     ///   - configure: The closure that configures the cell.
-    public init<Cell: UITableViewCell>(cellClass: Cell.Type, _ configure: ((Cell) -> Void)) {
-        let customCell = Cell(style: .default, reuseIdentifier: nil)
-        configure(customCell)
-        self.cell = customCell
+    public init<Cell: UITableViewCell>(cell: Cell, _ configure: ((Cell) -> Void)) {
+        self.cell = cell
+        configure(cell)
     }
     
     /// Adds an action to perform when the row is selected.
